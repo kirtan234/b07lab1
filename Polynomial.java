@@ -41,9 +41,9 @@ public class Polynomial {
                 }else if (splitNegative[j].indexOf("x") > -1){
                     exponent = 1;
                 }
-                Polynomial final = this.add(new Polynomial(new double[] {coefficient}, new int[] {exponent}));
-                this.coefficients = final.coefficients;
-                this.exponents = final.exponents;
+                Polynomial finalpoly = this.add(new Polynomial(new double[] {coefficient}, new int[] {exponent}));
+                this.coefficients = finalpoly.coefficients;
+                this.exponents = finalpoly.exponents;
             }
         }  
         scan.close();
